@@ -9,7 +9,7 @@ cordova plugin to get device information for android
 
 在js文件中使用：
 ```javascript
-document,addEventListener('deviceready', () => {
+document.addEventListener('deviceready', () => {
   window.cordova.plugins.deviceInfo.getDeviceInfo('', (result) => {
     console.log(result);
   }, (err) => {
