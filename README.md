@@ -11,6 +11,7 @@ cordova plugin to get device information for android
 ```javascript
 document.addEventListener('deviceready', () => {
   window.cordova.plugins.deviceInfo.getDeviceInfo('', (result) => {
+    const device = JSON.parse(result);
     console.log(result);
   }, (err) => {
     console.log(err);
